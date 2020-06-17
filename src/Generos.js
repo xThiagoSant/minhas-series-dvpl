@@ -25,7 +25,7 @@ const Generos = () =>{
                 <th scope="row">{records.id}</th>
                 <td>{records.name}</td>
                 <td>
-                    <button className='btn btn-danger' onClick={() => deleteGenero(records.id)}>Remover</button>
+                    <button style={{marginRight: '10px'}} className='btn btn-danger' onClick={() => deleteGenero(records.id)}>Remover</button>
                     <Link to={'/generos/' + records.id} className='btn btn-warning'>Editar</Link>
                 </td>
 
@@ -48,7 +48,7 @@ const Generos = () =>{
     return (
         <div className='container'>
             <h1>Gêneros</h1>
-            <div><Link to='/generos/novo' className='btn btn-primary'>Novo Gênero</Link></div>
+            <div style={{marginBottom:'10px'}}><Link to='/generos/novo' className='btn btn-primary'>Novo Gênero</Link></div>
             <table className="table table-dark">
                 <thead>
                     <tr>

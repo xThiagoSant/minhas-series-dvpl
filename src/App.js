@@ -7,10 +7,7 @@ import EditarGenero from './EditarGenero'
 import Series from './Series'
 import NovaSerie from './NovaSerie'
 import InfoSerie from './InfoSerie'
-
-const Home = () => {
-  return <h1>Home</h1>
-}
+import Home from './Home'
 
 function App() {
   return (
@@ -40,3 +37,4 @@ export default App;
 // nessa aula instalamos um servidor como dependencia uasndo yarn add https://github.com/tuliofaria/minhas-series-server
 // e usou um jeitinho usando proxy para executar ambos
 // usar o switch para selecionar apenas uma rota quando for encontrada
+// para rodar no servidor umbler instalar a dependencia npm-run-all

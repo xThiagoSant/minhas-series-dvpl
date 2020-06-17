@@ -18,12 +18,12 @@ import {
     return(
       <Navbar color='light' light expand='md'>
       <div className='container'>
-        <NavbarBrand tag={Link} to='/'>Minhas Séries</NavbarBrand>
+        <NavbarBrand tag={Link} to='/'>Minhas séries e filmes</NavbarBrand>
         <NavbarToggler onClick={toggleColapsed}/>
         <Collapse isOpen={colapsed} navbar>
           <Nav className='ml-auto' navbar>
             <NavItem>
-              <NavLink tag={Link} to='/series'>Séries</NavLink>
+              <NavLink tag={Link} to='/series'>Séries e Filmes</NavLink>
             </NavItem>          
             <NavItem>
               <NavLink tag={Link} to='/generos'>Gêneros</NavLink>

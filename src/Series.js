@@ -25,7 +25,7 @@ const Series = () =>{
                 <th scope="row">{records.id}</th>
                 <td>{records.name}</td>
                 <td>
-                    <button className='btn btn-danger' onClick={() => deleteSeries(records.id)}>Remover</button>
+                    <button style={{marginRight: '10px'}} className='btn btn-danger' onClick={() => deleteSeries(records.id)}>Remover</button>
                     <Link to={'/series/' + records.id} className='btn btn-warning'>Info</Link>
                 </td>
 
@@ -36,10 +36,10 @@ const Series = () =>{
     if(data.length === 0){
         return(
             <div className='container'>
-                <h1>Série</h1>
-                <div><Link to='/series/novo' className='btn btn-primary'>Nova Série</Link></div>
+                <h1>Série e Filmes</h1>
+                <div><Link to='/series/novo' className='btn btn-primary'>Nova Série/Filme</Link></div>
                 <div className="alert alert-warning" role="alert">
-                    Você não possui séries criadas.
+                    Você não possui séries ou filmes criados.
                 </div>                
             </div>
         )
@@ -47,8 +47,8 @@ const Series = () =>{
 
     return (
         <div className='container'>
-            <h1>Séries</h1>
-            <div><Link to='/series/novo' className='btn btn-primary'>Nova Série</Link></div>
+            <h1>Séries e Filmes</h1>
+            <div style={{marginBottom:'10px'}}><Link to='/series/novo' className='btn btn-primary'>Nova Série/Filme</Link></div>
             <table className="table table-dark">
                 <thead>
                     <tr>
